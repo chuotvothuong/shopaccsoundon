@@ -3,37 +3,48 @@
 <head>
   <meta charset="utf-8">
   <title>𝐒𝐡𝐨𝐩 𝐓𝐚̀𝐢 𝐊𝐡𝐨̉𝐚𝐧 𝐒𝐨𝐮𝐧𝐝𝐨𝐧</title>
-  <meta name="keywords" content="shop, tài khoản, otvothuong, game">
-  <meta name="description" content="Shop tài khoản game giá rẻ - Liên hệ mua ngay qua Facebook.">
+  <meta name="keywords" content="shop, tài khoản, soundon, game">
+  <meta name="description" content="Shop tài khoản Soundon giá rẻ - Liên hệ mua ngay qua Facebook.">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link type="text/css" href="./css/bootstrap.min.css" rel="stylesheet">
-  <link type="text/css" href="./css/thanhdieu.main.css" rel="stylesheet">
-  <link type="text/css" href="./css/respons.css" rel="stylesheet">      
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/thanhdieu.main.css" rel="stylesheet">
+  <link href="./css/respons.css" rel="stylesheet">      
 </head>
+
 <body>
   <div class="animationload">
     <div class="loader"></div>
   </div>
 
   <div id="wrapper">
+    <div class="container text-center" style="margin-top: 20px;">
+      <!-- 🛍️ Logo Shop -->
+      <img src="./img/logo-shop.png" alt="Logo Shop Soundon" class="shop-logo">
+      <h1 class="shop-title">Shop Tài Khoản Soundon</h1>
+      <p class="shop-slogan">Phân phối tài khoản SoundOn giá rẻ - Uy tín - Nhanh chóng</p>
+      <hr style="border-color: rgba(255,255,255,0.1);">
+    </div>
+
     <div class="container">
       <div class="col-xs-12 col-sm-7 col-lg-7">               
         <div class="info">
-          <h1>SHOP</h1>
-          <h2>Tài Khoản Soundon</h2>
-          <p>Soundon.global là một trang web dùng để phân phối nhạc lên các mxh như Fb, Tiktok, Spotify</p>.</p>
-          
-          <!-- Danh sách tài khoản -->
+          <!-- 🛒 Danh sách tài khoản -->
           <div class="product">
-            <h3>Tài khoản Soundon - No Zin</h3>
-            <p>Giá 30k</p></p>
-            <a href="https://facebook.com/YOUR_FB_LINK" target="_blank" class="btn btn-light-blue">Mua ngay</a>
+            <img src="./img/soundon-nozin.jpg" alt="Tài khoản Soundon No Zin" class="product-img">
+            <div class="product-info">
+              <h3>Tài khoản Soundon - No Zin</h3>
+              <p>Giá: 30.000đ</p>
+              <a href="https://facebook.com/chuotxyzabc" target="_blank" class="btn btn-light-blue">Mua ngay</a>
+            </div>
           </div>
-          
+
           <div class="product">
-            <h3>Tài Khoản Soundon - Zin</h3>
-            <p>Giá 45k</p>
-            <a href="https://facebook.com/YOUR_FB_LINK" target="_blank" class="btn btn-light-blue">Mua ngay</a>
+            <img src="./img/soundon-zin.jpg" alt="Tài khoản Soundon Zin" class="product-img">
+            <div class="product-info">
+              <h3>Tài khoản Soundon - Zin</h3>
+              <p>Giá: 45.000đ</p>
+              <a href="https://facebook.com/chuotxyzabc" target="_blank" class="btn btn-light-blue">Mua ngay</a>
+            </div>
           </div>
 
           <br>
@@ -44,7 +55,7 @@
 
       <div class="col-xs-12 col-sm-5 col-lg-5 text-center">                
         <div class="guardian">
-          <img src="./img/guardian.gif" alt="Shop Mascot">
+          <img src="./img/guardian.gif" alt="Shop Mascot" style="max-width: 100%; border-radius: 10px;">
         </div>                
       </div>
     </div>
@@ -58,25 +69,93 @@
   <script src="./js/scripts.js"></script>
 
   <style>
-    .product {
-      background: rgba(255,255,255,0.05);
-      padding: 10px 15px;
-      border-radius: 10px;
-      margin: 10px 0;
+    body {
+      background: #0b0b0b;
+      color: #fff;
+      font-family: Arial, sans-serif;
     }
+
+    .shop-logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #2196F3;
+      box-shadow: 0 0 12px rgba(33,150,243,0.5);
+    }
+
+    .shop-title {
+      font-size: 26px;
+      margin-top: 12px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .shop-slogan {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.05);
+      padding: 12px 16px;
+      border-radius: 10px;
+      margin: 12px 0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    }
+
+    .product-img {
+      width: 90px;
+      height: 90px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 2px solid #222;
+    }
+
+    .product-info {
+      flex: 1;
+    }
+
     .product h3 {
       margin: 0;
       font-size: 18px;
       color: #fff;
     }
+
     .product p {
       color: #ccc;
-      font-size: 13px;
-      margin-top: 5px;
+      font-size: 14px;
+      margin: 6px 0;
     }
+
     .btn {
-      margin-top: 8px;
+      margin-top: 6px;
       display: inline-block;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 6px 14px;
+      text-decoration: none;
+    }
+
+    .btn-light-blue {
+      background: #2196F3;
+      color: #fff;
+      transition: 0.2s;
+    }
+
+    .btn-light-blue:hover {
+      background: #0d8bf2;
+      box-shadow: 0 0 8px rgba(33,150,243,0.5);
     }
   </style>
 </body>
