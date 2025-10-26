@@ -1,58 +1,89 @@
 <!DOCTYPE html>
-    <title>404 Not Found</title>
-    <meta name="keywords" content="404, thanhdieu.com">
-    <meta name="description" content="404 Not Found - Không Tìm Thấy">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link type="text/css" media="all" href="./css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" media="all" href="./css/thanhdieu.main.css" rel="stylesheet">
-    <link type="text/css" media="all" href="./css/respons.css" rel="stylesheet">      
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Shop Tài Khoản - otvothuong</title>
+  <meta name="keywords" content="shop, tài khoản, otvothuong, game">
+  <meta name="description" content="Shop tài khoản game giá rẻ - Liên hệ mua ngay qua Facebook.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link type="text/css" href="./css/bootstrap.min.css" rel="stylesheet">
+  <link type="text/css" href="./css/thanhdieu.main.css" rel="stylesheet">
+  <link type="text/css" href="./css/respons.css" rel="stylesheet">      
 </head>
 <body>
-    <div class="animationload">
-        <div class="loader">
-        </div>
+  <div class="animationload">
+    <div class="loader"></div>
+  </div>
+
+  <div id="wrapper">
+    <div class="container">
+      <div class="col-xs-12 col-sm-7 col-lg-7">               
+        <div class="info">
+          <h1>SHOP</h1>
+          <h2>Tài Khoản Game Giá Rẻ</h2>
+          <p>Chọn tài khoản bạn muốn mua, ấn "Mua ngay" để mở Facebook liên hệ.</p>
+          
+          <!-- Danh sách tài khoản -->
+          <div class="product">
+            <h3>Tài khoản Liên Quân - Rank Cao Thủ</h3>
+            <p>90 tướng • 65 skin • Đăng nhập bằng Garena</p>
+            <a href="https://facebook.com/YOUR_FB_LINK" target="_blank" class="btn btn-light-blue">Mua ngay</a>
+          </div>
+          
+          <div class="product">
+            <h3>Tài khoản Free Fire - Level 65</h3>
+            <p>Nhiều skin hiếm • Đăng nhập Facebook</p>
+            <a href="https://facebook.com/YOUR_FB_LINK" target="_blank" class="btn btn-light-blue">Mua ngay</a>
+          </div>
+
+          <div class="product">
+            <h3>Tài khoản Tốc Chiến - Rank Kim Cương</h3>
+            <p>Kho tướng đầy đủ • Không ràng buộc email</p>
+            <a href="https://facebook.com/YOUR_FB_LINK" target="_blank" class="btn btn-light-blue">Mua ngay</a>
+          </div>
+
+          <br>
+          <a href="https://zalo.me/YOUR_ZALO_LINK" class="btn">Liên hệ Zalo</a>
+          <a href="https://facebook.com/YOUR_FB_LINK" class="btn btn-light-blue">Liên hệ Facebook</a>
+        </div>              
+      </div>
+
+      <div class="col-xs-12 col-sm-5 col-lg-5 text-center">                
+        <div class="guardian">
+          <img src="./img/guardian.gif" alt="Shop Mascot">
+        </div>                
+      </div>
     </div>
-    <div id="wrapper">
-        <div class="container">
-            <div class="col-xs-12 col-sm-7 col-lg-7">               
-                <div class="info">
-                    <h1>404</h1>
-                    <h2>Máy chủ gặp sự cố!</h2>
-                    <p>Trang bạn đang tìm đã bị di chuyển, xóa, đổi tên hoặc không tồn tại.</p>
-                    <p>Nếu không có điều gì diễn ra, sẽ tự động về trang chủ trong <span id="countdown"></span>s</p>
-                    <a href="../" class="btn">Trở về trang chủ</a>
-                    <a href="https://zalo.me/g/zxqlfs050" class="btn btn-light-blue">liên hệ chúng tôi</a>
-                </div>              
-            </div>
-            <div class="col-xs-12 col-sm-5 col-lg-5 text-center">                
-                <div class="guardian">
-                    <img src="./img/guardian.gif" alt="Fighting">
-                </div>                
-            </div>
-        </div>
-    </div>
-    <!-- Scripts -->
-    <script src="./js/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="./js/modernizr.custom.js" type="text/javascript"></script>
-    <script src="./js/jquery.nicescroll.min.js" type="text/javascript"></script>
-    <script src="./js/scripts.js" type="text/javascript"></script>
-    <script>/*
-        ----------------------------------------------------------------------
-       Countdown
-        ----------------------------------------------------------------------
-        */
-        function countdown(time) {
-           if (time > 0) {
-               time--;
-               document.getElementById('countdown').textContent = time;
-               setTimeout(function() {
-                   countdown(time);
-               }, 1000);
-           } else {
-               window.location.href = '../';
-           }
-       }
-       countdown(16);</script>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/modernizr.custom.js"></script>
+  <script src="./js/jquery.nicescroll.min.js"></script>
+  <script src="./js/scripts.js"></script>
+
+  <style>
+    .product {
+      background: rgba(255,255,255,0.05);
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+    .product h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #fff;
+    }
+    .product p {
+      color: #ccc;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+    .btn {
+      margin-top: 8px;
+      display: inline-block;
+    }
+  </style>
 </body>
 </html>
