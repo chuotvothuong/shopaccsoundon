@@ -18,10 +18,12 @@
 
   <div id="wrapper">
     <div class="container text-center" style="margin-top: 20px;">
-      <!-- 🛍️ Logo Shop -->
-      <img src="./img/logo-shop.png" alt="Logo Shop Soundon" class="shop-logo">
+      <!-- 🛍️ Logo Shop (kiểu ngang neon glow) -->
+      <div class="shop-header">
+        <img src="./img/logo-shop.png" alt="Logo Shop Soundon" class="shop-logo-banner">
+      </div>
       <h1 class="shop-title">Shop Tài Khoản Soundon</h1>
-      <p class="shop-slogan">Soundon.global là một trang web chuyên phân phối nhạc lên trên các mxh như Facebook, TikTok, Spotify..vv</p>
+      <p class="shop-slogan">Soundon.global là một trang web chuyên phân phối nhạc lên trên các MXH như Facebook, TikTok, Spotify..vv</p>
       <hr style="border-color: rgba(255,255,255,0.1);">
     </div>
 
@@ -68,7 +70,7 @@
   <script src="./js/jquery.nicescroll.min.js"></script>
   <script src="./js/scripts.js"></script>
 
-  <!-- ✅ Style tổng hợp (đã fix) -->
+  <!-- ✅ Style tổng hợp (đã fix và thêm logo neon) -->
   <style>
     body {
       background: #0b0b0b;
@@ -76,21 +78,42 @@
       font-family: Arial, sans-serif;
     }
 
-    /* 🌟 Logo Shop */
-    .shop-logo {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #2196F3;
-      box-shadow: 0 0 25px rgba(33,150,243,0.6);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 🌟 Logo Shop dạng ngang với hiệu ứng neon */
+    .shop-header {
+      margin-top: 10px;
       margin-bottom: 10px;
     }
 
-    .shop-logo:hover {
+    .shop-logo-banner {
+      width: 320px;
+      height: auto;
+      object-fit: contain;
+      animation: glowShift 4s linear infinite;
+      transition: transform 0.4s ease;
+      filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
+    }
+
+    .shop-logo-banner:hover {
       transform: scale(1.08);
-      box-shadow: 0 0 35px rgba(33,150,243,0.8);
+    }
+
+    /* 🌈 Hiệu ứng neon chuyển màu liên tục */
+    @keyframes glowShift {
+      0% {
+        filter: drop-shadow(0 0 20px #ff0000);
+      }
+      25% {
+        filter: drop-shadow(0 0 20px #00ffff);
+      }
+      50% {
+        filter: drop-shadow(0 0 20px #00ff00);
+      }
+      75% {
+        filter: drop-shadow(0 0 20px #ff00ff);
+      }
+      100% {
+        filter: drop-shadow(0 0 20px #ff0000);
+      }
     }
 
     .shop-title {
