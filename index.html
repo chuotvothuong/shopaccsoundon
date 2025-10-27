@@ -21,7 +21,7 @@
       <!-- 🛍️ Logo Shop -->
       <img src="./img/logo-shop.png" alt="Logo Shop Soundon" class="shop-logo">
       <h1 class="shop-title">Shop Tài Khoản Soundon</h1>
-      <p class="shop-slogan">Soundon.global là một trang web chuyên phân phối nhạc lên trên các mxh như facebook, tiktok, spotify..vv</p>
+      <p class="shop-slogan">Soundon.global là một trang web chuyên phân phối nhạc lên trên các mxh như Facebook, TikTok, Spotify..vv</p>
       <hr style="border-color: rgba(255,255,255,0.1);">
     </div>
 
@@ -68,6 +68,7 @@
   <script src="./js/jquery.nicescroll.min.js"></script>
   <script src="./js/scripts.js"></script>
 
+  <!-- ✅ Style tổng hợp (đã fix) -->
   <style>
     body {
       background: #0b0b0b;
@@ -75,28 +76,37 @@
       font-family: Arial, sans-serif;
     }
 
+    /* 🌟 Logo Shop */
     .shop-logo {
-      width: 120px;
-      height: 120px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #2196F3;
-      box-shadow: 0 0 12px rgba(33,150,243,0.5);
+      border: 4px solid #2196F3;
+      box-shadow: 0 0 25px rgba(33,150,243,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 10px;
+    }
+
+    .shop-logo:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 35px rgba(33,150,243,0.8);
     }
 
     .shop-title {
-      font-size: 26px;
-      margin-top: 12px;
+      font-size: 30px;
+      margin-top: 8px;
       font-weight: bold;
       color: #fff;
     }
 
     .shop-slogan {
-      color: #aaa;
-      font-size: 14px;
+      color: #bbb;
+      font-size: 15px;
       margin-bottom: 10px;
     }
 
+    /* 🛒 Sản phẩm */
     .product {
       display: flex;
       align-items: center;
@@ -137,6 +147,7 @@
       margin: 6px 0;
     }
 
+    /* 🔘 Nút */
     .btn {
       margin-top: 6px;
       display: inline-block;
@@ -158,33 +169,5 @@
       box-shadow: 0 0 8px rgba(33,150,243,0.5);
     }
   </style>
-  .shop-logo {
-  width: 180px; /* 👉 Tăng kích thước logo */
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #2196F3;
-  box-shadow: 0 0 25px rgba(33,150,243,0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 10px;
-}
-
-.shop-logo:hover {
-  transform: scale(1.08); /* Hiệu ứng phóng to nhẹ khi rê chuột */
-  box-shadow: 0 0 35px rgba(33,150,243,0.8);
-}
-
-.shop-title {
-  font-size: 30px;
-  margin-top: 8px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.shop-slogan {
-  color: #bbb;
-  font-size: 15px;
-  margin-bottom: 10px;
-}
 </body>
 </html>
