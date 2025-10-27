@@ -1,0 +1,28 @@
+.shop-logo {
+  width: 180px; /* 👉 Tăng kích thước logo */
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #2196F3;
+  box-shadow: 0 0 25px rgba(33,150,243,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.shop-logo:hover {
+  transform: scale(1.08); /* Hiệu ứng phóng to nhẹ khi rê chuột */
+  box-shadow: 0 0 35px rgba(33,150,243,0.8);
+}
+
+.shop-title {
+  font-size: 30px;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.shop-slogan {
+  color: #bbb;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
